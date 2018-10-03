@@ -86,4 +86,4 @@ class CensorsDict(dict):
     def __getstate__(self):
         """ Return the state of this censoring mask in a serializable form. """
 
-        return self.items()
+        return list(self.items())
